@@ -31,3 +31,11 @@ se (op == 1) {
       se (op == 2) {
         escreva ("Quantidade de produtos cadastrados: ", qp, "\n")
       }
+} enquanto (op != 3)
+    para (i = 0; i < qp; i++) {
+      t += valor[i]
+    }
+    escreva ("Total da compra: R$", t, "\n")
+    escreva ("Quantidade de produtos cadastrados: ", qp, "\n")
+  }
+}
