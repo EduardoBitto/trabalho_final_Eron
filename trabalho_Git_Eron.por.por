@@ -16,3 +16,18 @@ programa {
         escreva ("Opção inválida! Escolha novamente: ")
         leia (op)
       }
+se (op == 1) {
+        escreva ("Informe o nome do produto: ")
+        leia (p[qp])
+        faca {
+          escreva ("Informe o preço do produto: ")
+          leia (valor[qp])
+          se (valor[qp] <= 0) {
+            escreva ("Preço inválido! Digite um valor positivo.\n")
+          }
+        } enquanto (valor[qp] <= 0)
+        qp++
+      }
+      se (op == 2) {
+        escreva ("Quantidade de produtos cadastrados: ", qp, "\n")
+      }
